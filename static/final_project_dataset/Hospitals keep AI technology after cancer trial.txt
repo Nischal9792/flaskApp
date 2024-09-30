@@ -1,0 +1,20 @@
+Hospitals keep AI technology after cancer trial
+Jonny Manning
+BBC News, North East and Cumbria
+
+
+A hospital trust will continue to use AI technology after a trial found the software helped find bowel lesions which could become cancerous.
+South Tyneside and Sunderland NHS Foundation Trust (STSFT) has been using a computer module called the GI Genius AI device during colonoscopies - a procedure which uses a camera to look inside a person's bowel.
+On average the new technology found an extra 0.36 lesions - known as adenomas - during each colonoscopy, it said.
+Prof Colin Rees, a consultant gastroenterologist at the trust, said the new equipment would "save lives".
+"This trial has demonstrated that using artificial intelligence can significantly increase detection of the kind of abnormalities in the bowel that may progress to cancer," he said.
+"We are able to find these lesions, remove them and stop these lesions turning into cancer."
+The AI helped medical staff find more small or flat polyps, which are often missed by the human eye.
+There are about 43,000 new cases of bowel cancer each year in the UK and about 16,000 people die from the disease each year, Prof Rees said.
+A total of 2,032 patients from 10 centres across the UK took part in the trial.
+The research found the AI device identified at least one adenoma in an extra eight out of 100 people and did not increase the risk of complications.
+"We now use this technology routinely in our practice and I really hope that it will be used more widely," said Prof Rees.
+"The fantastic thing about using AI is that it learns. It is trained by looking at images.
+"It’s adding to its knowledge all the time, so it’s only going to get better."
+
+https://www.bbc.com/news/articles/cvg3r35j04po
