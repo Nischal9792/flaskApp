@@ -10,6 +10,19 @@ app = Flask(__name__, static_folder=static_folder_path)
 document_files_path = r'static\final_project_dataset'
 document_image_folder = 'images'  # Assuming your images are stored here
 
+original_webpage_links =[
+    "https://www.bbc.com/news/articles/c51ylvl8rrlo",
+    "https://thehimalayantimes.com/science-and-tech/astronomers-find-what-may-be-the-universes-brightest-object-with-a-black-hole-devouring-a-sun-a-day",
+    "https://www.bbc.com/news/articles/cy76gx0rgzxo",
+    "https://thehimalayantimes.com/kathmandu/heavy-rainfall-expected-in-four-provinces-today",
+    "https://www.bbc.com/news/articles/cvg3r35j04po",
+    "https://indianexpress.com/article/technology/tech-news-technology/meta-regulatory-heat-australia-user-data-ai-models-9563809/",
+    "https://www.bbc.com/news/articles/cz5reve8476o",
+    "https://www.bbc.com/news/articles/c93pr5ewr22o",
+    "https://thehimalayantimes.com/science-and-tech/openai-reveals-sora-a-tool-to-make-instant-videos-from-written-prompts",
+    "https://thehimalayantimes.com/science-and-tech/trio-wins-nobel-prize-in-chemistry-for-work-on-quantum-dots-used-in-electronics-and-medical-imagingv",
+]
+
 # Reading document files
 document_files = os.listdir(document_files_path)
 docs = []
@@ -37,7 +50,8 @@ for i, filename in enumerate(document_files):
         document_metadata.append({
             "title": title,
             "image": image_path,
-            "description": description
+            "description": description,
+            "original_link": original_webpage_links[i]
         })
 
 # Tokenization function
@@ -106,8 +120,9 @@ def search():
                 "score": sim,
                 "doc": docs[i][:200],  # Short snippet
                 "title": doc_metadata["title"],
-                "image_filename": doc_metadata["image"].split("/")[-1],  # Extract the filename from the image path
-                "description": doc_metadata["description"]
+                "image_filename": f"doc_{i + 1}.jpg",   
+                "description": doc_metadata["description"],
+                "original_link": doc_metadata["original_link"]
             }
             results.append(result)
 
