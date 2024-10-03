@@ -34,12 +34,13 @@
             {% for result in results %}
             <!-- {{result}} -->
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <!-- Document Image -->
-                <img src="{{ url_for('static',filename= 'result.image_filename') }}" alt="Document-Image" class="w-full h-48 object-cover">
                 
+                <!-- Image Display -->
+                <img src="{{ url_for('static', filename='images/' + result.image_filename) }}" alt="Document Image" class="w-full h-48 object-cover">
+
                 <div class="p-6">
                     <!-- Document Title -->
-                    <a href="#" class="block text-2xl font-bold mb-2 hover:text-blue-600">
+                    <a href="{{ result.original_link }}" target="_blank" class="block text-2xl font-bold mb-2 hover:text-blue-600">
                         {{ result.title }}
                     </a>
 
